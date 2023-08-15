@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    color: #fff;
+}
+
+/* MENU DO PORTFOLIO */
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Portfólio{
+    background-color: #9932CC;
+    border-radius: 100%;
+    padding: 2px 8px;
+}
+.topnav ul{
+    display: flex;
+}
+
+.topnav ul li{
+    list-style: none;
+}
+
+.topnav a{
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-bottom: 5px solid transparent;
+}
+
+.topnav a:hover{
+    border-bottom: 5px solid #9932CC;
+}
+
+/* FIM MENU DO PORTFOLIO */
+
+
+/* PAGINA HOME */
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(assets/galaxia.jpg);
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content, .sobre{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.home-content h3 span{
+    color: #9932CC;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p{
+    font-size: 20px;
+}
+
+.home-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: .2rem solid 	#9932CC;
+    border-radius: 50%;
+    color: #9932CC;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 1rem 1rem 1rem 0;
+    transition: 0.3s;
+}
+
+.home-icons a:hover{
+    background: #9932CC;
+    color: #fff;
+    box-shadow: 0 0 20px #9932CC;
+}
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #9932CC;
+    border-radius: 10%;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 5px #9932CC,
+    0 0 15px #9932CC, 0 0 25px #9932CC,
+    0 0 50px #9932CC, 0 0 100px #9932CC
+
+}
+
+/* FIM PAGINA HOME */
+
+
+ 
+/*SECTION ABOUT */
+.default {
+    padding-top:50px;
+    padding-bottom:50px;
+   
+}
+
+.default .section-desc {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title {
+    text-align:center;
+    font-size:60px;
+    font-weight: 600;
+}
+
+.default .section-title h2 span{
+    color: #9932CC;
+}
+
+.default .section-desc {
+    font-size:20px;
+    color:#CCC;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+.default .section-body {
+    max-width:1140px;
+    margin:auto;
+}
+.default.light {
+    background: url("assets/galaxia.jpg");
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.default.light .section-title,
+.default.light .section-body {
+    color:aliceblue;
+}
+
+.section-about {
+    display:flex;
+}
+.about-direita {
+    margin-top: 10px;
+    flex:1;
+}
+.about-direita  p {
+    font-size:15px;
+    line-height:25px;
+}
+.about-esquerda  {
+    width:520px;
+    text-align:center;
+}
+.about-esquerda img {
+    width:300px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #9932CC,
+    0 0 15px #9932CC, 0 0 25px #9932CC,
+    0 0 50px #9932CC, 0 0 100px #250147
+}
+/* FIM SEÇÃO ABOUT */
+
+/* SEÇÃO SERVIÇOS */
+    .servicos{
+        color: aliceblue;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 4rem;
+        background-color: #fff;
+    }
+
+    .servicos .subtitulo{
+        text-align: center;
+        font-size: 60px;
+        padding-bottom: 70px;
+        color: #000;
+    }
+
+    .subtitulo span{
+        color: #9932CC;
+    }
+
+    .container{
+        padding: 50px;
+    }
+
+    .lista-servicos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
+        grid-gap: 40px;
+    }
+
+
+
+    .lista-servicos div{
+        color: #000;
+        background-color: #fff;
+        padding: 20px;
+        font-size: 13px;
+        font-weight: 13px;
+        border-right: 10px;
+        transition: background 0.5s, transform 0.5s;
+        box-shadow: 0 0 5px gray;
+    }
+
+    .lista-servicos div i{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .lista-servicos div h2{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .lista-servicos div a{
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .read{
+        display: inline-block;
+        padding: 12px 20px;
+        background: #9932CC;
+        border-radius: 40px;
+        font-size: 16px;
+        color: #000;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .read:hover{
+        background-color: #250147;
+        color: white;
+        scale: 1.1;
+    }
+
+    .lista-servicos div:hover{
+        transform: translateY(-20px);
+    }
+
+/* FIM SEÇÃO SERVIÇOS */
+
+
+/* SEÇÃO SKILLS */
+
+/* FIM SEÇÃO SKILLS */
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background-color: #101318;
+    padding: 0 35px;
+    flex-direction: column;
+}
+
+.projects-title{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%;
+    position: absolute;
+    color: #000;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: #9932CC;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+    display: block;
+}
+.wrapper .carrossel{
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0px;
+    scroll-behavior: smooth;
+}
+
+.carrossel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carrossel.dragging img{
+    pointer-events: none;
+}
+
+.carrossel img{
+    height: 300px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
+}
+
+.carrossel img:first-child{
+    margin-left: 0;
+}
+
+
+/* CONTATO */
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    background: #101318;
+}
+
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h2 span{
+    color: #9932CC;
+}
+
+.contact-text p{
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact-list{
+    margin-bottom: 3rem;
+}
+
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #9932CC;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #9932CC;
+}
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #9932CC;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #9932CC;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.contact-icons i:hover{
+    background: #9932CC;
+    color: white;
+    box-shadow: 0 0 20px #9932CC;
+}
+
+.contact-form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px;
+    background: #a8a8af;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form .enviar{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #9932CC;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* FIM CONTATO */
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 900px) {
+    .carrossel img{
+        width: calc(100% / 2)
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carrossel img{
+        width: 100%;
+    }
+}
+
+
+
